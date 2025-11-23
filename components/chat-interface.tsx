@@ -104,7 +104,7 @@ export const ChatInterface = ({
 			<div className="flex-1 overflow-hidden">
 				<ScrollArea className="h-full p-4 gap-4">
 					<div className="space-y-4">
-						{messages.map((message, index) => (
+						{messages.map((message, _) => (
 							<div
 								key={message.id}
 								className={`flex ${

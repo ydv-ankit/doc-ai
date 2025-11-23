@@ -47,6 +47,7 @@ export async function POST(req: Request) {
 			answer: response.content,
 		});
 	} catch (error) {
+		console.error(error);
 		return NextResponse.json(
 			{
 				error: "An error occurred while processing your request.",
